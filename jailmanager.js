@@ -25,7 +25,7 @@ function createJail(sourceJail)
   //TODO: write regexp to filter all special character in sourceJail variable.
   //TODO: add random string generator.
   var i;
-  var destJail = Math.random(); //TODO: Write jail name generator;
+  var destJail = "jail_" + (Math.floor(Math.random() * 100000));
   jails.push(destJail);
   var ret = destJail;
   destJail += '/';
