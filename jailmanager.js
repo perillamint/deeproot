@@ -41,6 +41,13 @@ function createJail(sourceJail)
   return destJail;
 }
 
+function jailRunner(app)
+{
+  //TODO: write regexp to filter all special character in app variable.
+  //TODO: register child process to jail list.
+  exec("chroot " + app);
+}
+
 function destroyJail(jail)
 {
   //TODO: add jail deleter.
